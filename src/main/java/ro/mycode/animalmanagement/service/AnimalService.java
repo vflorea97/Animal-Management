@@ -23,6 +23,10 @@ public class AnimalService {
         animals.forEach(a-> System.out.println(a));
     }
 
+    public List<Animal> getAllAnimale(){
+        return animalRepository.findAll();
+    }
+
 
     public List<Animal> getAnimaleOrdonateSpecie(){
         return  animalRepository.getAnimaleOrdonateSpecie().get();
